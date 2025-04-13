@@ -44,12 +44,14 @@ var vite_config_default = defineConfig({
     }
   },
   root: path2.resolve(import.meta.dirname, "client"),
+  base: "/CV/",
+  // Must match your repo name
   build: {
-    outDir: path2.resolve(import.meta.dirname, "dist/public"),
+    outDir: "../docs",
+    // Direct output to /docs
     emptyOutDir: true
-  },
-  base: "/CV/"
-  // Note the leading and trailing slashes
+    // Clear old files
+  }
 });
 
 // server/vite.ts

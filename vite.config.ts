@@ -26,9 +26,9 @@ export default defineConfig({
     },
   },
   root: path.resolve(import.meta.dirname, "client"),
-  base: '/CV/',  // Must match your repo name
+  base: '/CV/',
   build: {
-    outDir: '../docs',  // Direct output to /docs
-    emptyOutDir: true,   // Clear old files
+    outDir: '../docs', // Direct output to docs folder
+    emptyOutDir: true,
   }
 });
