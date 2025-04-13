@@ -45,12 +45,10 @@ var vite_config_default = defineConfig({
   },
   root: path2.resolve(import.meta.dirname, "client"),
   base: "/CV/",
-  // Must match your repo name
   build: {
     outDir: "../docs",
-    // Direct output to /docs
+    // Direct output to docs folder
     emptyOutDir: true
-    // Clear old files
   }
 });
 
