@@ -30,4 +30,5 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
+  base: '/CV/',  // Note the leading and trailing slashes
 });
