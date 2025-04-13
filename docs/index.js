@@ -47,7 +47,9 @@ var vite_config_default = defineConfig({
   build: {
     outDir: path2.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true
-  }
+  },
+  base: "/CV/"
+  // Note the leading and trailing slashes
 });
 
 // server/vite.ts
